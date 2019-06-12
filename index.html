@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sally Student</title>
+        <Meta name="description" content="Sally Student is a software engineer">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div id="application-root"></div>
+          
+        <script
+            src="https://unpkg.com/react@16/umd/react.development.js">
+        </script>
+        <script
+            src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+        </script>
+        <script
+            src="https://unpkg.com/babel-standalone@6/babel.min.js">
+        </script>
+          
+        <script type="text/babel">
+function App(props) {
+  return (
+    <div>
+        <header>
+            {props.children}
+        </header>
+        <main>
+            <address>
+                <div className="contact-image">
+                    <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="My Picture"></img>
+                </div>
+                <div className="contact-info">
+                    <h2>Contact Info</h2>
+                    <p> Sally Student</p>
+                    <p><a href="mailto:sallystudent@email.com">sallystudent@email.com</a></p>
+                    <p>867-5309</p>
+                </div>
+            </address>
+
+            <section className="education">
+                <h2>Education</h2>
+                <h3>Thinkful</h3>
+            </section>
+
+            <section className="employment">
+                <h2>Employment History</h2>
+
+                <h3>Apple</h3>
+                    <ul>
+                        <li>Software Engineer</li>
+                        <li>Sept 2017-Current</li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae metus et mi ornare porttitor ultricies non sapien. In mattis vitae eros non pharetra. Fusce metus est, vehicula eu risus id, convallis semper orci. Nunc blandit justo enim, ut scelerisque ex auctor tincidunt. Nam vitae dui diam. </p>
+                        </li>
+                    </ul>
+                <h3>Google</h3>
+                    <ul>
+                        <li>Software Engineer</li>
+                        <li>April 2012-Sept 2017</li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae metus et mi ornare porttitor ultricies non sapien. In mattis vitae eros non pharetra. Fusce metus est, vehicula eu risus id, convallis semper orci. Nunc blandit justo enim, ut scelerisque ex auctor tincidunt. Nam vitae dui diam. </p>
+                        </li>
+                    </ul>    
+            </section>
+
+         </main>
+    </div>
+  );
+};
+
+
+ReactDOM.render(
+  <App>
+    <h1>Sally Student</h1>
+  </App>,
+  document.querySelector('#application-root')
+);
+          </script>
+          </body>
+</html>

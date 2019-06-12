@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.contact-image {
+    text-align: center;
+    background: lightblue;
+}
+
+.contact-image img {
+    width: 550px;
+}
+
+.contact-info {
+    text-align: center;
+    background: rgba(211, 211, 211, 0.212);
+    padding: 15px;
+}
+
+.education h2 {
+    text-align: center;
+}
+
+.education {
+    padding: 15px;
+}
+
+.employment h2 {
+    text-align: center;
+}
+
+.employment {
+    padding: 15px;
+}
+
+.employment li {
+    margin-bottom: 15px;
+}
